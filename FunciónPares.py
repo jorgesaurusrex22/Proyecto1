@@ -51,8 +51,21 @@ def numerosPositivos(numPos):
         print('Y en total hay '+str(acPos))
     else:
         print('No hay números positivos')
+def numerosNegativos(numNeg):
+    contNeg=0
+    acNeg=0
+    for i in range(5):
+        if numNeg[i]<=0:
+            contNeg=contNeg+1
+            acNeg=acNeg+numNeg[i]
+    if contNeg!=0:
+        print('Hay '+str(contNeg)+' números positivos')
+        print('Y en total hay '+str(acNeg))
+    else:
+        print('No hay números negativos')
 numeros(num)
 impresionNumeros(num)
 numerosPares(num)
 numeroImpares(num)
 numerosPositivos(num)
+numerosNegativos(num)
